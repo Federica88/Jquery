@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of jQuery Multiple Properties Animation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style >
+    .box{
+        width: 150px;
+        height: 50px;
+        background: #ccc;
+        margin-top: 30px;
+        border-style: solid; /* Required to animate border width */
+        border-color: #6f40ce;
+        overflow:hidden;
+    }
+</style>
+<script >
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".box").animate({
+            width: "300px",
+            height: "300px",
+            marginLeft: "150px",
+            borderWidth: "10px",
+            opacity: 0.5
+        })
+        .fadeOut(1000)
+        .fadeIn(1000)
+        .animate({
+            width:"150px",
+            height: "50px"
+        
+        })
+        ;
+    });
+    //method chaining
+});
+</script>
+
+<script>
+let myObj = {
+    "head" : 2,
+    "legs" : 2,
+    "toes" : 10
+}
+console.log(myObj);
+    
+    
+    
+    </script>
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <div class="box">
+    <h2>PROFILE</h2>
+    <p> Jquery lesson</p>
+    
+    </div>
+</body>
+</html>                            
